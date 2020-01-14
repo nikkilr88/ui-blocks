@@ -1,0 +1,21 @@
+{
+  "name": "ui-blocks-example",
+  "homepage": "https://nikkilr88.github.io/ui-blocks",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^1.1.4",
+    "styled-components": "^5.0.0",
+    "ui-blocks": "link:.."
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
