@@ -1,8 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { device } from "../media-query-data";
 
 export const StyledBasicHeader = styled.header`
   background: #2b2b2b;
+  ${({ backgroundImage }) =>
+    backgroundImage &&
+    css`
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(${backgroundImage});
+      background-size: cover;
+    `}
   color: #2b2b2b;
   height: 100vh;
   display: flex;
