@@ -13,17 +13,11 @@ npm install --save ui-blocks
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from "react";
 
-import MyComponent from 'ui-blocks'
+import { MyComponent } from "ui-blocks";
 
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+const Example = () => <MyComponent />;
 ```
 
 ## License
