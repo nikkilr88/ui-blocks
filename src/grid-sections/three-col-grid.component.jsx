@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FiCoffee, FiGlobe, FiHeadphones } from "react-icons/fi";
+// import { FiCoffee, FiGlobe, FiHeadphones } from "react-icons/fi";
 
 // Styles
 import { StyledThreeColGrid } from "./three-col-grid-styles";
@@ -36,19 +36,19 @@ ThreeColGrid.defaultProps = {
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, officia",
   gridItems: [
     {
-      icon: <FiCoffee />,
+      // icon: <FiCoffee />,
       title: "Grid Item One",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, in."
     },
     {
-      icon: <FiGlobe />,
+      // icon: <FiGlobe />,
       title: "Grid Item Two",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, in."
     },
     {
-      icon: <FiHeadphones />,
+      // icon: <FiHeadphones />,
       title: "Grid Item Three",
       description:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, in."
