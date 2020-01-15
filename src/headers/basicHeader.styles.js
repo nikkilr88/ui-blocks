@@ -1,8 +1,15 @@
 import styled, { css } from "styled-components";
 import { device } from "../media-query-data";
+import { primaryHeading } from "../shared-styles";
 
 export const StyledBasicHeader = styled.header`
   background: #2b2b2b;
+  color: #2b2b2b;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: ${({ textAlignment }) =>
+    textAlignment === "center" ? `center` : `flex-start`};
   ${({ backgroundImage }) =>
     backgroundImage &&
     css`
@@ -10,16 +17,10 @@ export const StyledBasicHeader = styled.header`
         url(${backgroundImage});
       background-size: cover;
     `}
-  color: #2b2b2b;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: ${({ textAlignment }) =>
-    textAlignment === "center" ? `center` : `flex-start`};
 
   .header-text {
     padding-left: 75px;
-    color: #eee;
+    color: #fff;
     text-align: ${({ textAlignment }) =>
       textAlignment === "center" ? `center` : `left`};
 
@@ -28,9 +29,8 @@ export const StyledBasicHeader = styled.header`
     }
 
     h1 {
-      font-size: 48px;
+      ${primaryHeading}
       margin: 8px 0 16px;
-      font-family: "Ubuntu";
     }
 
     p {

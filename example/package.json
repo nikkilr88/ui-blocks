@@ -8,6 +8,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.8.0",
     "react-scripts": "^1.1.4",
     "styled-components": "^5.0.0",
     "ui-blocks": "link:.."

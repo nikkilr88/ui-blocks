@@ -1,18 +1,19 @@
 import styled from "styled-components";
 import { device } from "../media-query-data";
+import { textBlock, secondaryHeading } from "../shared-styles";
 
 export const StyledThreeColGrid = styled.section`
   padding: 75px 50px;
   text-align: center;
   color: #1b1b1b;
+  background: ${({ backgroundColor }) => backgroundColor};
 
   @media ${device.tablet} {
     padding: 75px 25px;
   }
 
   .section-text {
-    max-width: 600px;
-    width: 100%;
+    ${textBlock}
     margin: 0 auto 75px;
 
     @media ${device.tablet} {
@@ -20,7 +21,7 @@ export const StyledThreeColGrid = styled.section`
     }
 
     h2 {
-      font-size: 38px;
+      ${secondaryHeading}
       margin: 8px 0 16px;
     }
 
@@ -58,6 +59,20 @@ export const StyledThreeColGrid = styled.section`
         max-width: 500px;
         margin: 0 auto;
       }
+    }
+
+    .icon {
+      display: block;
+      margin: 0 auto;
+      height: 50px;
+      width: 50px;
+      background: #2980b9;
+      color: #fff;
+      font-size: 22px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 `;
