@@ -8,10 +8,11 @@ export default class App extends Component {
       <div>
         <BasicHeader
           textAlignment="left"
+          ctaOnClick={() => alert("Click!")}
           backgroundImage="https://images.unsplash.com/photo-1501791330673-603715379ded?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
         />
-        <CenteredTextBlock backgroundColor={null} />
-        <ThreeColGrid backgroundColor="#f7f7f7" />
+        <CenteredTextBlock />
+        <ThreeColGrid backgroundColor="#f2f2f2" />
       </div>
     );
   }

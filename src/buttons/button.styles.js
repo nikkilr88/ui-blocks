@@ -5,7 +5,7 @@ const buttonStyles = css`
   background: #2980b9;
   color: #fff;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-family: "Lato";
 `;

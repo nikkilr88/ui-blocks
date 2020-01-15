@@ -4,6 +4,8 @@
 /* Lato */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Ubuntu&display=swap");
 
+/* TODO: Move paragraph styles to `shared-styles` */
+
 p {
   line-height: 1.5;
   font-family: "Lato";
