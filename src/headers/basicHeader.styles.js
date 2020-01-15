@@ -19,8 +19,9 @@ export const StyledBasicHeader = styled.header`
     `}
 
   .header-text {
-    padding-left: 75px;
     color: #fff;
+    padding-left: ${({ textAlignment }) =>
+      textAlignment === "center" ? `0` : `75px`};
     text-align: ${({ textAlignment }) =>
       textAlignment === "center" ? `center` : `left`};
 
