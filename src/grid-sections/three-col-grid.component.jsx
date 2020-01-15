@@ -5,8 +5,24 @@ import { FiCoffee, FiGlobe, FiHeadphones } from "react-icons/fi";
 // Styles
 import { StyledThreeColGrid } from "./three-col-grid-styles";
 
-const ThreeColGrid = ({ title, subtitle, gridItems, backgroundColor }) => {
-  // Create grid items
+/*
+
+  @prop {string} backgroundColor Background color of block component
+  @prop {gridItems} array Array of objects with grid items information { icon: String, title: String, description: String }
+  @prop {string} subtitle Text that is displayed under heading
+  @prop {string} title Text that is displayed as section heading
+
+*/
+
+// TODO: Rename 'title' and 'subtitle' to 'heading' and 'subheading'
+const ThreeColGrid = ({ backgroundColor, gridItems, subtitle, title }) => {
+  /* 
+    !: Create grid items
+
+    User is allowed to pass in an array with a length less than 3. If the array contains more than 3 items, we splice it so only the first 3 get rendered.
+
+  */
+
   const renderGridItems = () => {
     return gridItems.splice(0, 3).map((gridItem, i) => (
       <div className="grid-item" key={gridItem.title + i}>
@@ -20,7 +36,7 @@ const ThreeColGrid = ({ title, subtitle, gridItems, backgroundColor }) => {
   };
 
   return (
-    <StyledThreeColGrid backgroundColor={backgroundColor}>
+    <StyledThreeColGrid id="threeColGrid" backgroundColor={backgroundColor}>
       <div className="section-text">
         <h2>{title}</h2>
         <p>{subtitle}</p>
@@ -31,9 +47,8 @@ const ThreeColGrid = ({ title, subtitle, gridItems, backgroundColor }) => {
 };
 
 ThreeColGrid.defaultProps = {
-  title: "Grid Section Title",
-  subtitle:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, officia",
+  backgroundColor: null,
+
   gridItems: [
     {
       icon: <FiCoffee />,
@@ -54,14 +69,16 @@ ThreeColGrid.defaultProps = {
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, in."
     }
   ],
-  backgroundColor: null
+  subtitle:
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, officia",
+  title: "Grid Section Title"
 };
 
 ThreeColGrid.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
+  backgroundColor: PropTypes.string,
   gridItems: PropTypes.array,
-  backgroundColor: PropTypes.string
+  subtitle: PropTypes.string,
+  title: PropTypes.string
 };
 
 export default ThreeColGrid;

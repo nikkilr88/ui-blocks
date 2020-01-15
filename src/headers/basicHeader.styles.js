@@ -44,4 +44,8 @@ export const StyledBasicHeader = styled.header`
       opacity: 0.75;
     }
   }
+
+  .cta-wrapper {
+    margin-top: 35px;
+  }
 `;

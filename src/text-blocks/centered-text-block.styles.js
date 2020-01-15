@@ -26,7 +26,7 @@ export const StyledCenteredTextBlock = styled.section`
     }
 
     hr {
-      max-width: 300px;
+      max-width: 200px;
       width: 50%;
       margin: 50px auto 0 auto;
       border: 1px solid #2980b9;
