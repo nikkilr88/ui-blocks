@@ -3,7 +3,13 @@ import PropTypes from "prop-types";
 import { FiCoffee, FiGlobe, FiHeadphones } from "react-icons/fi";
 
 // Styles
-import { StyledThreeColGrid } from "./three-col-grid-styles";
+import {
+  StyledGridItem,
+  StyledGridWrapper,
+  StyledIconWrapper,
+  StyledTextWrapper,
+  StyledThreeColGrid
+} from "./three-col-grid-styles";
 
 /*
 
@@ -25,30 +31,28 @@ const ThreeColGrid = ({ backgroundColor, gridItems, subtitle, title }) => {
 
   const renderGridItems = () => {
     return gridItems.splice(0, 3).map((gridItem, i) => (
-      <div className="grid-item" key={gridItem.title + i}>
-        <div>
-          {gridItem.icon && <i className="icon">{gridItem.icon}</i>}
-          <h3>{gridItem.title}</h3>
-          <p>{gridItem.description}</p>
-        </div>
-      </div>
+      <StyledGridItem key={gridItem.title + i}>
+        {gridItem.icon && (
+          <StyledIconWrapper>{gridItem.icon}</StyledIconWrapper>
+        )}
+        <h3>{gridItem.title}</h3>
+        <p>{gridItem.description}</p>
+      </StyledGridItem>
     ));
   };
 
   return (
     <StyledThreeColGrid id="threeColGrid" backgroundColor={backgroundColor}>
-      <div className="section-text">
+      <StyledTextWrapper>
         <h2>{title}</h2>
         <p>{subtitle}</p>
-      </div>
-      <div className="grid">{renderGridItems()}</div>
+      </StyledTextWrapper>
+      <StyledGridWrapper>{renderGridItems()}</StyledGridWrapper>
     </StyledThreeColGrid>
   );
 };
 
 ThreeColGrid.defaultProps = {
-  backgroundColor: null,
-
   gridItems: [
     {
       icon: <FiCoffee />,

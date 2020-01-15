@@ -2,7 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // Styles
-import { StyledCenteredTextBlock } from "./centered-text-block.styles.js";
+import {
+  StyledCenteredTextBlock,
+  StyledTextWrapper
+} from "./centered-text-block.styles.js";
 
 const CenteredTextBlock = ({ backgroundColor, text, title }) => {
   return (
@@ -10,11 +13,11 @@ const CenteredTextBlock = ({ backgroundColor, text, title }) => {
       backgroundColor={backgroundColor}
       id="centeredTextBlock"
     >
-      <div className="section-text">
+      <StyledTextWrapper>
         <h2>{title}</h2>
         <p>{text}</p>
         <hr />
-      </div>
+      </StyledTextWrapper>
     </StyledCenteredTextBlock>
   );
 };

@@ -5,7 +5,11 @@ import PropTypes from "prop-types";
 import Button from "../buttons/button.component.jsx";
 
 // Styles
-import { StyledBasicHeader } from "./basicHeader.styles";
+import {
+  StyledBasicHeader,
+  StyledTextWrapper,
+  StyledCtaWrapper
+} from "./basicHeader.styles";
 
 /*
 
@@ -37,20 +41,20 @@ const BasicHeader = ({
     id="basicHeader"
     textAlignment={textAlignment}
   >
-    <div className="header-text">
+    <StyledTextWrapper textAlignment={textAlignment}>
       <h1>{heading}</h1>
       <p>{subheading}</p>
       {showCta && (
-        <div className="cta-wrapper">
+        <StyledCtaWrapper>
           <Button
             ctaType={ctaType}
             linkTo={ctaLinkTo}
             onClick={ctaOnClick}
             text={ctaText}
           />
-        </div>
+        </StyledCtaWrapper>
       )}
-    </div>
+    </StyledTextWrapper>
   </StyledBasicHeader>
 );
 

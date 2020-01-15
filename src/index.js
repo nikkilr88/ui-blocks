@@ -1,11 +1,11 @@
 // Headers
-import BasicHeader from "./headers/basicHeader.component.jsx";
+import BasicHeader from "./components/headers/basicHeader.component.jsx";
 
 // Grids
-import ThreeColGrid from "./grid-sections/three-col-grid.component.jsx";
+import ThreeColGrid from "./components/grid-sections/three-col-grid.component.jsx";
 
 // Text Blocks
-import CenteredTextBlock from "./text-blocks/centered-text-block.component.jsx";
+import CenteredTextBlock from "./components/text-blocks/centered-text-block.component.jsx";
 
 // Global Styles (Font imports)
 import "./global-styles.styles.css";

@@ -13,6 +13,7 @@ export default class App extends Component {
         />
         <CenteredTextBlock />
         <ThreeColGrid backgroundColor="#f2f2f2" />
+        <CenteredTextBlock />
       </div>
     );
   }
