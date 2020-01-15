@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 
-import { BasicHeader, ThreeColGrid, CenteredTextBlock } from "ui-blocks";
+import {
+  BasicHeader,
+  ThreeColGrid,
+  CenteredTextBlock,
+  BasicFooterSocial
+} from "ui-blocks";
 
 export default class App extends Component {
   render() {
@@ -13,7 +18,8 @@ export default class App extends Component {
         />
         <CenteredTextBlock />
         <ThreeColGrid backgroundColor="#f2f2f2" />
-        <CenteredTextBlock />
+        <CenteredTextBlock showHr={false} />
+        <BasicFooterSocial />
       </div>
     );
   }

@@ -7,7 +7,7 @@ import {
   StyledTextWrapper
 } from "./centered-text-block.styles.js";
 
-const CenteredTextBlock = ({ backgroundColor, text, title }) => {
+const CenteredTextBlock = ({ backgroundColor, text, title, showHr }) => {
   return (
     <StyledCenteredTextBlock
       backgroundColor={backgroundColor}
@@ -16,13 +16,14 @@ const CenteredTextBlock = ({ backgroundColor, text, title }) => {
       <StyledTextWrapper>
         <h2>{title}</h2>
         <p>{text}</p>
-        <hr />
+        {showHr && <hr />}
       </StyledTextWrapper>
     </StyledCenteredTextBlock>
   );
 };
 
 CenteredTextBlock.defaultProps = {
+  showHr: true,
   text:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem incidunt mollitia dignissimos eveniet saepe quidem illo ipsum quaerat. Aliquid!",
   title: "Centered Text Block"
@@ -30,6 +31,7 @@ CenteredTextBlock.defaultProps = {
 
 CenteredTextBlock.proptypes = {
   backgroundColor: PropTypes.string,
+  showHr: PropTypes.bool,
   text: PropTypes.string,
   title: PropTypes.string
 };
