@@ -8,11 +8,11 @@ export const primaryHeading = css`
 
 export const secondaryHeading = css`
   font-family: "Ubuntu";
-  font-size: 38px;
+  font-size: 32px;
 `;
 
 /* Text */
 export const textBlock = css`
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
 `;

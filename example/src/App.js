@@ -18,9 +18,10 @@ export default class App extends Component {
           backgroundImage="https://images.unsplash.com/photo-1501791330673-603715379ded?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
         />
 
-        {/* <CenteredTextBlock /> */}
+        <CenteredTextBlock />
 
         <ImageSideAboutBlock
+          headingSmall="Why choose us"
           heading="Awesome Feature One"
           image="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
         />
@@ -28,10 +29,11 @@ export default class App extends Component {
         <ImageSideAboutBlock
           imagePosition="right"
           heading="Awesome Feature Two"
+          headingSmall="Lorem ipsum dolor"
           image="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
         />
 
-        {/* <ThreeColGrid backgroundColor="#fff" /> */}
+        <ThreeColGrid backgroundColor="#fff" />
 
         <BasicFooterSocial />
       </div>

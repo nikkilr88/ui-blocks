@@ -24,7 +24,7 @@ export const StyledTextWrapper = styled.div`
   }
 
   p {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 100;
   }
 

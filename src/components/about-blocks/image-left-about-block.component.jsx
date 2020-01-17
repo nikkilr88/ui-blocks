@@ -8,11 +8,18 @@ import {
   StyledTextWrapper
 } from "./image-left-about-block.styles";
 
-const ImageSideAboutBlock = ({ heading, text, image, imagePosition }) => {
+const ImageSideAboutBlock = ({
+  heading,
+  headingSmall,
+  text,
+  image,
+  imagePosition
+}) => {
   return (
     <StyledImageLeftAboutBlock>
       <StyledImageWrapper image={image} imagePosition={imagePosition} />
       <StyledTextWrapper>
+        {headingSmall && <h3>{headingSmall}</h3>}
         <h2>{heading}</h2>
         <p>{text}</p>
       </StyledTextWrapper>

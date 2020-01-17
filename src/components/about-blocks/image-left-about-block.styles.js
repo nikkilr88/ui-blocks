@@ -43,11 +43,19 @@ export const StyledTextWrapper = styled.div`
 
   h2 {
     ${secondaryHeading}
-    margin: 8px 0 16px;
+    margin: 5px 0 25px;
+  }
+
+  h3 {
+    color: #bbb;
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
   }
 
   p {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 100;
   }
 `;

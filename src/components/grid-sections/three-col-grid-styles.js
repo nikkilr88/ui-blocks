@@ -17,7 +17,7 @@ export const StyledThreeColGrid = styled.section`
 // !: TEXT STYLES
 export const StyledTextWrapper = styled.div`
   ${textBlock}
-  margin: 0 auto 75px;
+  margin: 0 auto 100px;
 
   @media ${device.tablet} {
     margin-bottom: 35px;
@@ -29,7 +29,7 @@ export const StyledTextWrapper = styled.div`
   }
 
   p {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 100;
   }
 `;
@@ -37,6 +37,7 @@ export const StyledTextWrapper = styled.div`
 // !: GRID STYLES
 export const StyledGridWrapper = styled.div`
   display: flex;
+  justify-content: center;
 
   @media ${device.tablet} {
     flex-direction: column;
@@ -46,19 +47,21 @@ export const StyledGridWrapper = styled.div`
 // !: GRID ITEM STYLES
 export const StyledGridItem = styled.div`
   padding: 0 10px;
+  max-width: 350px;
 
   @media ${device.tablet} {
     padding: 35px 0;
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 0;
+    font-family: "Ubuntu";
   }
 
   p {
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 100;
     margin-bottom: 0;
 
     @media ${device.tablet} {
