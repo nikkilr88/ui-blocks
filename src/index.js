@@ -7,6 +7,9 @@ import ThreeColGrid from "./components/grid-sections/three-col-grid.component.js
 // Text Blocks
 import CenteredTextBlock from "./components/text-blocks/centered-text-block.component.jsx";
 
+// About Blocks
+import ImageSideAboutBlock from "./components/about-blocks/image-left-about-block.component.jsx";
+
 // Footers
 import BasicFooterSocial from "./components/footers/basic-footer-social/basic-footer-social.component.jsx";
 
@@ -14,4 +17,10 @@ import BasicFooterSocial from "./components/footers/basic-footer-social/basic-fo
 import "./global-styles.styles.css";
 
 // Exports
-export { BasicHeader, ThreeColGrid, CenteredTextBlock, BasicFooterSocial };
+export {
+  BasicHeader,
+  ThreeColGrid,
+  ImageSideAboutBlock,
+  CenteredTextBlock,
+  BasicFooterSocial
+};

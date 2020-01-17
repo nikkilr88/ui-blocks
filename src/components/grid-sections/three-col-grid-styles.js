@@ -45,7 +45,7 @@ export const StyledGridWrapper = styled.div`
 
 // !: GRID ITEM STYLES
 export const StyledGridItem = styled.div`
-  padding: 10px;
+  padding: 0 10px;
 
   @media ${device.tablet} {
     padding: 35px 0;
@@ -53,11 +53,13 @@ export const StyledGridItem = styled.div`
 
   h3 {
     font-size: 22px;
+    margin-bottom: 0;
   }
 
   p {
     font-size: 18px;
     font-weight: normal;
+    margin-bottom: 0;
 
     @media ${device.tablet} {
       max-width: 500px;

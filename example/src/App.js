@@ -4,7 +4,8 @@ import {
   BasicHeader,
   ThreeColGrid,
   CenteredTextBlock,
-  BasicFooterSocial
+  BasicFooterSocial,
+  ImageSideAboutBlock
 } from "ui-blocks";
 
 export default class App extends Component {
@@ -12,13 +13,26 @@ export default class App extends Component {
     return (
       <div>
         <BasicHeader
+          showCta={false}
           textAlignment="left"
-          ctaOnClick={() => alert("Click!")}
           backgroundImage="https://images.unsplash.com/photo-1501791330673-603715379ded?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
         />
-        <CenteredTextBlock />
-        <ThreeColGrid backgroundColor="#f2f2f2" />
-        <CenteredTextBlock showHr={false} />
+
+        {/* <CenteredTextBlock /> */}
+
+        <ImageSideAboutBlock
+          heading="Awesome Feature One"
+          image="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+        />
+
+        <ImageSideAboutBlock
+          imagePosition="right"
+          heading="Awesome Feature Two"
+          image="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+        />
+
+        {/* <ThreeColGrid backgroundColor="#fff" /> */}
+
         <BasicFooterSocial />
       </div>
     );

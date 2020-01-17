@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { devices, device } from "../../../media-query-data";
 
 export const StyledBasicFooterSocial = styled.footer`
-  padding: 45px 50px;
+  padding: 50px;
   background: #1b1b1b;
   display: flex;
   align-items: center;
