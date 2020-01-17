@@ -5,7 +5,8 @@ import {
   ThreeColGrid,
   CenteredTextBlock,
   BasicFooterSocial,
-  ImageSideAboutBlock
+  ImageSideAboutBlock,
+  CallToActionButtonSide
 } from "ui-blocks";
 
 export default class App extends Component {
@@ -32,6 +33,8 @@ export default class App extends Component {
           headingSmall="Lorem ipsum dolor"
           image="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
         />
+
+        <CallToActionButtonSide />
 
         <ThreeColGrid backgroundColor="#fff" />
 

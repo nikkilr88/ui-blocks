@@ -9,12 +9,13 @@ const buttonStyles = css`
   font-size: 18px;
   font-weight: normal;
   font-family: "Lato";
+  align-self: center;
+  border: none;
 `;
 
 // !: REGULAR BUTTON STYLES
 export const StyledButton = styled.button`
   ${buttonStyles}
-  border: none;
 `;
 
 // !: LINK BUTTON STYLES

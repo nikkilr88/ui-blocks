@@ -9,11 +9,12 @@ export const StyledImageLeftAboutBlock = styled.section`
 
   @media ${device.tablet} {
     flex-direction: column;
+    align-items: center;
     padding: 75px 35px;
   }
 
   & > * {
-    margin: 18px 50px;
+    margin: 0 50px;
   }
 `;
 

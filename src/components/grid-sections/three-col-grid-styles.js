@@ -41,6 +41,7 @@ export const StyledGridWrapper = styled.div`
 
   @media ${device.tablet} {
     flex-direction: column;
+    align-items: center;
   }
 `;
 

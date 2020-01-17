@@ -21,6 +21,11 @@ const Button = ({ ctaType, linkTo, onClick, text }) => {
   ) : null;
 };
 
+Button.defaultProps = {
+  ctaType: "button",
+  text: "I'm a button"
+};
+
 Button.propTypes = {
   ctaType: PropTypes.string,
   linkTo: PropTypes.string,
