@@ -52,6 +52,10 @@ export const StyledGridItem = styled.div`
 
   @media ${device.tablet} {
     padding: 35px 0;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   h3 {

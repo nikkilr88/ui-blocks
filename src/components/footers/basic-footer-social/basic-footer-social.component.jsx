@@ -8,6 +8,7 @@ import {
   StyledSocialWrapper
 } from "./basic-footer-social-styles";
 
+// TODO: Add id prop
 const BasicFooterSocial = ({
   companyName,
   emailAddress,

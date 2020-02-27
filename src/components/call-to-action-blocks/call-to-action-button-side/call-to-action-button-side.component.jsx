@@ -7,6 +7,7 @@ import Button from "../../buttons/button.component.jsx";
 // Styles
 import { StyledCallToActionButtonSide } from "./call-to-action-button-side.styles";
 
+// TODO: Add id prop
 const CallToActionButtonSide = ({ heading, text, ctaText, onClick }) => {
   return (
     <StyledCallToActionButtonSide>

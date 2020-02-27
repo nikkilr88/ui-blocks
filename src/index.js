@@ -16,6 +16,9 @@ import CallToActionButtonSide from "./components/call-to-action-blocks/call-to-a
 // Footers
 import BasicFooterSocial from "./components/footers/basic-footer-social/basic-footer-social.component.jsx";
 
+// Wrappers
+import Wrapper from "./components/wrapper.component.jsx";
+
 // Global Styles (Font imports)
 import "./global-styles.styles.css";
 
@@ -26,5 +29,6 @@ export {
   ImageSideAboutBlock,
   CenteredTextBlock,
   BasicFooterSocial,
-  CallToActionButtonSide
+  CallToActionButtonSide,
+  Wrapper
 };

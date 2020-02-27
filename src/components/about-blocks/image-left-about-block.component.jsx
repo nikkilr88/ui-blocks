@@ -8,6 +8,7 @@ import {
   StyledTextWrapper
 } from "./image-left-about-block.styles";
 
+// TODO: Add id prop
 const ImageSideAboutBlock = ({
   heading,
   headingSmall,
