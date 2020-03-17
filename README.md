@@ -17,7 +17,17 @@ import React from "react";
 
 import { BasicHeader } from "@nikkilr88/ui-blocks";
 
-const BasicHeader = () => <BasicHeader />;
+const BasicHeader = () => (<BasicHeader 
+    backgroundImage= ''
+    ctaLinkTo= ''
+    ctaOnClick={() => {}}
+    ctaText= ''
+    ctaType= ''
+    heading= ''
+    showCta= {true}
+    subheading= ''
+    textAlignment= ''/>
+)
 ```
 
 ## Components
