@@ -15,10 +15,33 @@ npm install --save @nikkilr88/ui-blocks
 ```jsx
 import React from "react";
 
-import { MyComponent } from "@nikkilr88/ui-blocks";
+import { BasicHeader } from "@nikkilr88/ui-blocks";
 
-const Example = () => <MyComponent />;
+const BasicHeader = () => (<BasicHeader 
+    backgroundImage= ''
+    ctaLinkTo= ''
+    ctaOnClick={() => {}}
+    ctaText= ''
+    ctaType= ''
+    heading= ''
+    showCta= {true}
+    subheading= ''
+    textAlignment= ''/>
+)
 ```
+
+## Components
+```jsx
+import { 
+    BasicHeader,
+    ThreeColGrid,
+    ImageSideAboutBlock,
+    CenteredTextBlock,
+    BasicFooterSocial,
+    CallToActionButtonSide 
+} from "@nikkilr88/ui-blocks";
+```
+
 
 ## License
 
