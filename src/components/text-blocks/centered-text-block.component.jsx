@@ -7,6 +7,7 @@ import {
   StyledTextWrapper
 } from "./centered-text-block.styles.js";
 
+// TODO: Add id prop
 const CenteredTextBlock = ({ backgroundColor, text, title, showHr }) => {
   return (
     <StyledCenteredTextBlock

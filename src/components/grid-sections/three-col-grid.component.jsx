@@ -20,6 +20,7 @@ import {
 
 */
 
+// TODO: Add id prop
 // TODO: Rename 'title' and 'subtitle' to 'heading' and 'subheading'
 const ThreeColGrid = ({ backgroundColor, gridItems, subtitle, title }) => {
   /* 
